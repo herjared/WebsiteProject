@@ -1,0 +1,219 @@
+    {% extends "base.html" %}
+    {% load static %}
+    {% block page_content %}
+
+    <!--Navigation & Picture Section-->
+    <section id="top"></section>
+            <nav class="navbar navbar-expand-sm justify-content-end smooth-scroll" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand mr-auto" href="#">
+                        <img class="logo" src="{%static 'img/jaredlogoBLUE.png'%}" alt="" data-aos="fade-down">
+                    </a>
+                    <button type = 'button' class="navbar-toggler mx-auto custom-toggler" data-aos="fade-down" data-aos-delay="200" data-toggle="collapse" data-target="#micon" aria-expanded="false" aria-toggle="Toggle navigation">
+                            <span class="fas fa-bars fa-md"></span>
+                    </button>
+                    <span class="w-100 d-none d-sm-block"></span>
+                    <form method="get" action="{%static 'downloads/Resume_herjared.pdf'%}" target="_blank" >
+                            <button type="submit" class="btn flex-nowrap resume-btn" data-aos="fade-down" data-aos-delay="350">
+                                <i class="fas fa-download"></i> Resume
+                            </button>
+                    </form>
+                    <div class="collapse navbar-collapse" id = 'micon'>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item text-center" data-aos="fade-down" data-aos-delay="100"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                            <li class="nav-item text-center" data-aos="fade-down" data-aos-delay="150"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                            <li class="nav-item text-center" data-aos="fade-down" data-aos-delay="200"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                            <li class="nav-item text-center" data-aos="fade-down" data-aos-delay="300"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+    <!--About Me Section-->
+        <div class='container py-5'>
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="headline " data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000" data-aos-once="true">
+                        Full Stack Developer & Freelance Web Developer
+                    </h1>
+                </div>
+            </div>
+            <div class="row pb-5">
+                <div class="col text-center">
+                    <p class="headline-p" data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000" data-aos-once="true">
+                        A love for developing and all things creative
+                    </p>
+                </div>
+            </div>
+            <div class="row pb-5">
+                    <img src="{%static 'img/profilepic.png'%}" class="portrait mx-auto d-block" data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000" data-aos-once="true">
+            </div>
+            <div class="row pb-3">
+                <div class="col text-center" data-aos="fade-in" data-aos-duration="3000" data-aos-once="true">
+                    <div id="app" >
+                    </div><br>
+                </div>
+            </div>
+            <section id="about">
+                <div class="row mx-auto pb-5">
+                    <div class="col col-sm-1 offset-sm-4 d-flex justify-content-center" data-aos="fade-right" data-aos-delay="150" data-aos-once="true">
+                        <a class="icons" href="https://github.com/herjared" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+                    </div>
+                    <div class="col col-sm-2 d-flex justify-content-center" data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
+                        <a class="icons" href="https://www.linkedin.com/in/jared-hernandez-33a857116/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </div>
+                    <div class="col col-sm-1  d-flex justify-content-center" data-aos="fade-right" data-aos-delay="250" data-aos-once="true">
+                        <a class="icons" href="mailto:herjaredsinai@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container-fluid py-5 intro-section">
+            <div class="row mx-5 justify-content-md-center">
+                <div class="col-sm-9  mx-auto  text-center">
+                    <h3 class="name-title" data-aos="fade-in" data-aos-duration="2000" data-aos-once="true">Hello, my name is Jared Hernandez.</h3><br>
+
+                </div>
+            </div>
+            <div class="row">
+                        <div class="col col-xl-6 mx-auto text-center" data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000" data-aos-once="true">
+                            <p class="about_paragraph">
+                                I am a programmer who is always looking to learn new technologies and gain experience.
+                                I graduated with a bachelor's degree in Computer Science from Kean University in Union, New Jersey.
+                                Everyday I strive to improve my skills and lifestyle.
+                                I believe that if you put passion into your work, it will be noticed.
+                            </p><br>
+                            <p class="about_paragraph">
+                                Outside of my professional life I play indoor/outdoor soccer and weight lift to keep me in shape. I also enjoy
+                                video/photo editing and drawing digital art.
+                            </p>
+                        </div>
+                </div>
+        </div>
+
+        <!--Skills Section-->
+        <div class="container-fluid my-5 text-center" >
+                <section id="skills">
+                <div class="mx-auto pb-5">
+                    <h3 class="titles" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="bottom-bottom" data-aos-once="true">What I've Worked With</h3>
+                </div>
+                    </section>
+                <div class="row" data-aos="fade-right"  data-aos-duration="2000" data-aos-once="true">
+                    <div class="col col-xl-6 mx-auto text-center">
+                        <div class="card-group my-3 shadow-lg">
+                            <div class="card" >
+                                <div class="card-body">
+                                    <i class="fas fa-terminal fa-3x table-icon"></i>
+                                    <br><br>
+                                  <h5 class="card-title" >Programs</h5><br/>
+                                  <p class="card-text">I have programmed a variety of projects covering subjects like game creation and systems programming. </p><br>
+                                  <p class="card-text2"> Programming Technologies: </p>
+                                   <p class="card-text">Python<br/>Java<br/>C#<br/>C<br/>PyCharm<br/>Visual Studio<br/>Anaconda Virtual Environment</p><br>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <i class="far fa-window-maximize fa-3x table-icon"></i>
+                                    <br><br>
+                                  <h5 class="card-title">Websites</h5><br/>
+                                  <p class="card-text">I created this website and working on more. Effort was put
+                                  forward to make sure the website was responsive for all devices using the latest technologies.</p><br>
+                                    <p class="card-text2"> Website Technologies: </p>
+                                   <p class="card-text">HTML<br/>CSS<br/>Javascript<br/>Bootstrap 4<br/>Visual Studio<br/>Django</p><br>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-body">
+                                    <i class="fas fa-database fa-3x table-icon"></i>
+                                    <br><br>
+                                  <h5 class="card-title">Databases</h5><br>
+                                  <p class="card-text">I have worked on database design,
+                                      database implementation, storage and performance considerations. </p><br>
+                                    <p class="card-text2"> Database Technologies: </p>
+                                   <p class="card-text">MySQL<br/>PHP<br/>Unix<br/>Linux<br/>jQuery</p><br>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+
+
+        <!--Projects Section-->
+    <section id="projects">
+        <div class="container-fluid mt-5 py-5 text-center bg-light">
+                <h3 class="titles" data-aos="fade-up"  data-aos-duration="2000" data-aos-once="true">Projects</h3>
+        <div class="container my-5" data-aos="fade-up"  data-aos-duration="2000" data-aos-once="true">
+            <div class="row">
+            {% for project in projects %}
+                <div class="col-md-4">
+                    <div class="card mb-5">
+                        <div class="hovereffect">
+                        <img class="card-img-top"  src="{% static project.image %}">
+                        <div class="overlay">
+                            <h2>{{ project.technology }}</h2>
+                            <a class="info" href="{{project.links}}" target="_blank">View Code</a>
+                        </div>
+                            </div>
+                    </div>
+                    <p class="project-text">{{ project.title }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+            </div>
+    </section>
+    <!--Contact Section-->
+    <section id="contact">
+            <div class="container-fluid py-5 contact-section">
+                <div class="pt-3 text-center">
+                    <h3 class="contact-header">Contact Me</h3>
+                </div>
+                <div class="row pt-5">
+                    <div class="col col-xl-5 mx-auto text-center">
+                            <h5 class="contact-paragraph">Please feel free to reach out to me regarding work or if you would like to collaborate on a new project.
+                            </h5>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col col-xl-3 mx-auto text-center">
+                            <h5 class="contact-paragraph">Email: herjaredsinai@gmail.com
+                            </h5>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col text-center">
+                        <a class="btn btn-light" href="mailto:herjaredsinai@gmail.com" role="button"><i class="far fa-envelope fa-1x"></i> Email Me</a>
+                    </div>
+                </div>
+                <div class="row mx-auto pt-5 ">
+                    <div class="col col-sm-1 offset-sm-5 d-flex justify-content-center">
+                        <a class="contact-icons" href="https://github.com/herjared" target="_blank">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="col col-sm-1 d-flex justify-content-center">
+                        <a class="contact-icons" href="https://www.linkedin.com/in/jared-hernandez-33a857116/" target="_blank">
+                            <i class="fab fa-linkedin-in fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <div class="container-fluid footer-section">
+                <div class="row mx-auto pt-5 pb-1">
+                    <div class="col col-xl-5 mx-auto text-center">
+                        <a href="#">
+                            <img src="{%static 'img/jaredlogoWHITE.png'%}" width="50" height="50">
+                        </a>
+                    </div>
+                </div>
+                <div class="row pb-5">
+                    <div class="col text-center">
+                            <p class="contact-footer">Made by me © 2020 Jared Hernandez. All rights reserved.</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+    {% endblock %}
+
