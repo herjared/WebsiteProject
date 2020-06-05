@@ -144,25 +144,47 @@
     <section id="projects">
         <div class="container-fluid mt-5 py-5 text-center bg-light">
                 <h3 class="titles" data-aos="fade-up"  data-aos-duration="2000" data-aos-once="true">Projects</h3>
-        <div class="container my-5" data-aos="fade-up"  data-aos-duration="2000" data-aos-once="true">
-            <div class="row">
-            {% for project in projects %}
-                <div class="col-md-4">
-                    <div class="card mb-5">
-                        <div class="hovereffect">
-                        <img class="card-img-top"  src="{% static project.image %}">
-                        <div class="overlay">
-                            <h2>{{ project.technology }}</h2>
-                            <a class="info" href="{{project.links}}" target="_blank">View Code</a>
-                        </div>
+            <div class="container my-5" data-aos="fade-up"  data-aos-duration="2000" data-aos-once="true">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-5">
+                            <div class="hovereffect">
+                                <img class="card-img-top"  src="{% static 'img/project1.png' %}">
+                                <div class="overlay">
+                                    <h2>Python HTML CSS Django</h2>
+                                    <a class="info" href="https://github.com/herjared/WebsiteProject" target="_blank">View Code</a>
+                                </div>
                             </div>
+                        </div>
+                        <p class="project-text">Personal Website</p>
                     </div>
-                    <p class="project-text">{{ project.title }}</p>
+                    <div class="col-md-4">
+                        <div class="card mb-5">
+                            <div class="hovereffect">
+                                <img class="card-img-top"  src="{% static 'img/project2.png' %}">
+                                <div class="overlay">
+                                    <h2>Cocos2D Python</h2>
+                                    <a class="info" href="https://github.com/kamatikos/Senior-Capstone" target="_blank">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="project-text">Captsone Game</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-5">
+                            <div class="hovereffect">
+                                <img class="card-img-top"  src="{% static 'img/project3.png' %}">
+                                <div class="overlay">
+                                    <h2>PHP MySQL</h2>
+                                    <a class="info" href="https://github.com/herjared/Database-Work" target="_blank">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="project-text">Database Project</p>
+                    </div>
                 </div>
-                {% endfor %}
             </div>
         </div>
-            </div>
     </section>
     <!--Contact Section-->
     <section id="contact">
