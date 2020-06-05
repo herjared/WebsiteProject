@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 # Heroku: Update database configuration from $DATABASE_URL.
-import dj_database_url
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -113,7 +112,7 @@ CSRF_COOKIE_SECURE = True
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'US'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -134,6 +133,7 @@ STATICFILES_DIRS = [
 #Static Root for whitenoise
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+import dj_database_url
 #database configuration
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
